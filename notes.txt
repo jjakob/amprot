@@ -1,0 +1,6 @@
+PB2 = 3.4V (power not ok, mute off)
+      -0.4V (power ok, mute off)
+      4.5V (mute on)
+
+PB3 = 0V (amp fail)
+      
