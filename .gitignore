@@ -1,3 +1,6 @@
 *.eep
 *.elf
 *.o
+*.lss
+*.sym
+*.cof
