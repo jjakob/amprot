@@ -140,6 +140,9 @@ eep: $(TARGET).eep
 lss: $(TARGET).lss 
 sym: $(TARGET).sym
 
+.PHONY: readcal
+readcal:
+	$(AVRDUDE) $(AVRDUDE_FLAGS) -U calibration:r:cal.hex:h
 
 # Program the device.  
 program: $(TARGET).hex $(TARGET).eep
