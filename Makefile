@@ -28,7 +28,7 @@ DEBUG = dwarf-2
 CSTANDARD = -std=gnu99
 
 # Place -D or -U options here
-CDEFS =
+CDEFS = -DF_CPU=4800000UL -DPROG_CAL=$(shell awk -F "," -- "{print \$$2}" cal.hex)
 
 # Place -I options here
 CINCS =
@@ -86,7 +86,7 @@ AVRDUDE_PROGRAMMER = usbasp
 AVRDUDE_PORT = usb
 AVRDUDE_MCU = t13
 
-AVRDUDE_WRITE_FLASH = -U flash:w:$(TARGET).hex
+AVRDUDE_WRITE_FLASH = -U flash:w:$(TARGET).hex -U lfuse:w:0x79:m
 #AVRDUDE_WRITE_EEPROM = -U eeprom:w:$(TARGET).eep
 
 

@@ -2,6 +2,7 @@
 /* Copyright 2021 Jernej Jakob <jernej.jakob@gmail.com> */
 
 #include <avr/io.h>
+#include <util/delay.h>
 
 #define	LED_RED		PB0
 #define	LED_GREEN	PB1
@@ -14,4 +15,21 @@ int main(void) {
 	/* IN_PWROK_MUTE needs internal pullup */
 	PORTB = _BV(LED_RED)|_BV(LED_GREEN)|_BV(IN_PWROK_MUTE);
 	DDRB = _BV(LED_RED)|_BV(LED_GREEN)|_BV(RELAY);
+
+#ifdef PROG_CAL
+	/* load osccal */
+	OSCCAL = PROG_CAL;
+#endif
+
+	/* turn off leds */
+	_delay_ms(500);
+	PORTB &= ~(_BV(LED_RED)|_BV(LED_GREEN));
+
+	while(1) {
+		_delay_ms(1000);
+		PORTB |= _BV(LED_RED)|_BV(LED_GREEN);
+		_delay_ms(1000);
+		PORTB &= ~(_BV(LED_RED)|_BV(LED_GREEN));
+
+	}
 }
