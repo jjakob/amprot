@@ -49,11 +49,15 @@ A firmware binary is available pre-compiled. If you wish to modify the program, 
 
 ### Flashing the firmware
 
+#### With compilation environment
+
 To flash, you'll need a working compilation environment as above, plus avrdude and a supported programmer. The program is made for an ATtiny13A, using other ATtiny's is possible (you may have to modify the code).
 
 Edit the Makefile and change the `AVRDUDE_` parameters to your specific needs. Run `make readcal` and `make program`. In addition to writing the firmware, this will read the 4.8MHz calibration OSCCAL value from the device signature and set it in the code. This is required as the ATtiny13A only automatically loads the 9.6MHz OSCCAL, but not the 4.8MHz one.
 
-You can alternatively use avrdude directly or another programmer, but you'll need to set the fuse bits correctly: lfuse = 0x79 (Disable CLKDIV8, 4.8MHz clock). The clock will be uncalibrated so delays will be inaccurate (slower), but the circuit will still function.
+#### Without compilation environment
+
+You can alternatively use avrdude or another programmer without having a full compilation environment, but you'll need to set the fuse bits correctly: lfuse = 0x79 (Disable CLKDIV8, 4.8MHz clock). The clock will be uncalibrated so delays will be inaccurate (slower), but the circuit will still function.
 
 ### Credits
 
