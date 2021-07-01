@@ -10,6 +10,8 @@ A useful addition to any solid-state audio amplifier.
 - dual color status LED
 
 ### Performance
+
+|			|	|
 | --------------------	| ---------- |
 | Fault detection time	| max. 0.6ms |
 | Power-on delay	| ~ 1s |
@@ -21,6 +23,8 @@ A useful addition to any solid-state audio amplifier.
 
 ### LED
 
+|	|	|
+| ----- | ----- |
 | yellow | manual mute or power-on selftest |
 | green | Normal operation, output on |
 | red (steady) | Power failure / undervoltage |
