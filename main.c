@@ -17,16 +17,16 @@
 #define IN_PROT_TEMP_ADMUX 2
 
 /* thresholds and hysteresis are 8-bit ADC values */
-#define MUTE_THRESHOLD 128
-#define PWRFAIL_THRESHOLD 10
+#define MUTE_THRESHOLD 210 /* 4.1V */
+#define PWRFAIL_THRESHOLD 10 /* 10 = 0.2V */
 
-#define TEMP_THRESHOLD 128
-#define PROT_THRESHOLD 10
+#define TEMP_THRESHOLD 86 /* 76 (+10) = 65C */
+#define PROT_THRESHOLD 10 /* 0.2V */
 
-#define ADC_HYSTERESIS 10
+#define ADC_HYSTERESIS 10 /* 0.2V */
 
 /* produces about 500ms delay */
-#define MEDIUM_DELAY 65535
+#define MEDIUM_DELAY 65535 /* 65535 @4.8MHz */
 
 #define OSCCAL_STEP 16
 
