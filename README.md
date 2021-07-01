@@ -54,3 +54,7 @@ You can alternatively use avrdude directly or another programmer, but you'll nee
 ### Credits
 
 This is an original design by me, not copying any existing circuit. Inspired by <https://sound-au.com/project111.htm> and <https://sound-au.com/project33.htm>.
+
+### License
+
+CC BY-NC-SA v4.0
