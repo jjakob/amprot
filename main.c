@@ -15,6 +15,14 @@
 #define IN_PWRFAIL_MUTE_ADMUX 1
 #define IN_PROT_TEMP_ADMUX 2
 
+#define MUTE_THRESHOLD 128
+#define PWRFAIL_THRESHOLD 10
+
+#define TEMP_THRESHOLD 128
+#define PROT_THRESHOLD 10
+
+#define ADC_HYSTERESIS 10
+
 #define OSCCAL_STEP 16
 
 volatile struct {
@@ -86,19 +94,19 @@ int main(void) {
 			intflags.adc_int = 0;
 
 			if((ADMUX & (MUX0|MUX1)) == IN_PWRFAIL_MUTE_ADMUX){
-				if(adcval > 127)
+				if(adcval >= MUTE_THRESHOLD)
 					state = STATE_MUTE;
-				if((128 > adcval) && (adcval > 10))
+				else if((MUTE_THRESHOLD-ADC_HYSTERESIS > adcval) && (adcval > PWRFAIL_THRESHOLD+ADC_HYSTERESIS))
 					state = STATE_PWRFAIL;
-				if((adcval < 11) && ((state == STATE_MUTE)||(state == STATE_PWRFAIL)))
+				else if((adcval <= PWRFAIL_THRESHOLD) && ((state == STATE_MUTE)||(state == STATE_PWRFAIL)))
 					state = STATE_NORMAL;
 			}
 			else {
-				if((adcval > 127) && ((state == STATE_TEMP)||(state == STATE_PROT)))
+				if((adcval >= TEMP_THRESHOLD) && ((state == STATE_TEMP)||(state == STATE_PROT)))
 					state = STATE_NORMAL;
-				if((128 > adcval) && (adcval > 10))
+				else if((TEMP_THRESHOLD-ADC_HYSTERESIS > adcval) && (adcval > PROT_THRESHOLD+ADC_HYSTERESIS))
 					state = STATE_TEMP;
-				if(adcval < 11)
+				else if(adcval <= PROT_THRESHOLD)
 					state = STATE_PROT;
 			}
 
@@ -108,6 +116,7 @@ int main(void) {
 			else {
 				ADMUX = _BV(ADLAR)|IN_PWRFAIL_MUTE_ADMUX;
 				if(state == STATE_START)
+					/* first pass is done and we've checked both inputs so it's safe to transition to normal */
 					state = STATE_NORMAL;
 			}
 
