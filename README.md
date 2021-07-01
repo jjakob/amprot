@@ -17,7 +17,7 @@ A useful addition to any solid-state audio amplifier.
 | Relay release time	| 0.6-1.5ms (with [MI-SH-212L relay](https://www.goodsky.com.tw/en/relays/general-purpose-relay/71-mi-2p-relay), does not include fault detection time) |
 | Power-on delay	| ~ 1s |
 | Fault recovery delay	| ~ 0.5s |
-| Supply voltage	| must be same as relay coil voltage, 8-35V (limited by 78L05) |
+| Supply voltage	| must be same as relay coil voltage, 8-30V (limited by 78L05) |
 | Maximum relay current	| 100mA (can be increased by substituting the driver transistor) |
 | DC offset detection	| max. 500mV |
 | Temperature trip point | ~ 65 deg C, resets at ~ 60 deg C (adjustable in software) |
