@@ -3,6 +3,7 @@
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
+#include <avr/wdt.h>
 #include <util/delay.h>
 #include <stdlib.h>
 
@@ -93,10 +94,15 @@ int main(void) {
 	_delay_ms(500);
 	PORTB &= ~(_BV(LED_RED)|_BV(LED_GREEN));
 
+	/* enable watchdog timer with 15ms timeout */
+	wdt_enable(WDTO_15MS);
+
 	/* start new conversion */
 	ADCSRA |= _BV(ADSC);
 
 	while(1) {
+		wdt_reset();
+
 		if(intflags.adc_int){
 			intflags.adc_int = 0;
 
