@@ -536,111 +536,109 @@ $EndComp
 $Comp
 L Relay:G2RL-24-DC12 RL1
 U 1 1 60EB6BEA
-P 3700 6550
-F 0 "RL1" H 4330 6596 50  0000 L CNN
-F 1 "G2RL-24-DC12" H 4330 6505 50  0000 L CNN
-F 2 "Relay_THT:Relay_DPDT_Omron_G2RL" H 4350 6500 50  0001 L CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf" H 3700 6550 50  0001 C CNN
-	1    3700 6550
+P 3700 6650
+F 0 "RL1" H 4330 6696 50  0000 L CNN
+F 1 "G2RL-24-DC12" H 4330 6605 50  0000 L CNN
+F 2 "Relay_THT:Relay_DPDT_Omron_G2RL" H 4350 6600 50  0001 L CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf" H 3700 6650 50  0001 C CNN
+	1    3700 6650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3700 6850 3700 6950
+	3700 6950 3700 7050
 Wire Wire Line
-	3700 6950 3900 6950
+	3700 7050 3900 7050
 $Comp
 L Connector:Conn_01x01_Male J9
 U 1 1 60EC91E3
-P 5250 5950
-F 0 "J9" H 5222 5974 50  0000 R CNN
-F 1 "AMP+" H 5222 5883 50  0000 R CNN
-F 2 "" H 5250 5950 50  0001 C CNN
-F 3 "~" H 5250 5950 50  0001 C CNN
-	1    5250 5950
+P 5250 6050
+F 0 "J9" H 5222 6074 50  0000 R CNN
+F 1 "AMP+" H 5222 5983 50  0000 R CNN
+F 2 "" H 5250 6050 50  0001 C CNN
+F 3 "~" H 5250 6050 50  0001 C CNN
+	1    5250 6050
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x01_Male J10
 U 1 1 60ECACAD
-P 5250 6150
-F 0 "J10" H 5222 6174 50  0000 R CNN
-F 1 "SPEAKER-" H 5222 6083 50  0000 R CNN
-F 2 "" H 5250 6150 50  0001 C CNN
-F 3 "~" H 5250 6150 50  0001 C CNN
-	1    5250 6150
+P 5250 6250
+F 0 "J10" H 5222 6274 50  0000 R CNN
+F 1 "SPEAKER-" H 5222 6183 50  0000 R CNN
+F 2 "" H 5250 6250 50  0001 C CNN
+F 3 "~" H 5250 6250 50  0001 C CNN
+	1    5250 6250
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x01_Male J11
 U 1 1 60ECB64B
-P 5250 6350
-F 0 "J11" H 5222 6374 50  0000 R CNN
-F 1 "SPEAKER+" H 5222 6283 50  0000 R CNN
-F 2 "" H 5250 6350 50  0001 C CNN
-F 3 "~" H 5250 6350 50  0001 C CNN
-	1    5250 6350
+P 5250 6450
+F 0 "J11" H 5222 6474 50  0000 R CNN
+F 1 "SPEAKER+" H 5222 6383 50  0000 R CNN
+F 2 "" H 5250 6450 50  0001 C CNN
+F 3 "~" H 5250 6450 50  0001 C CNN
+	1    5250 6450
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5050 5950 3800 5950
+	5050 6050 3800 6050
 Wire Wire Line
-	3800 5950 3800 6250
+	3800 6050 3800 6350
 Wire Wire Line
-	5050 6150 4900 6150
+	4000 6250 4000 6350
 Wire Wire Line
-	4000 6150 4000 6250
+	5050 6450 4950 6450
 Wire Wire Line
-	5050 6350 4950 6350
+	4950 6450 4950 6950
 Wire Wire Line
-	4950 6350 4950 6850
+	4950 6950 4100 6950
 Wire Wire Line
-	4950 6850 4100 6850
+	3900 6150 4200 6150
 Wire Wire Line
-	3900 6050 4200 6050
+	3900 6150 3900 7050
 Wire Wire Line
-	3900 6050 3900 6950
-Wire Wire Line
-	4200 6050 4200 6250
+	4200 6150 4200 6350
 $Comp
 L Diode:1N4148 D2
 U 1 1 60EE62C3
-P 2650 6750
-F 0 "D2" V 2604 6830 50  0000 L CNN
-F 1 "1N4148" V 2695 6830 50  0000 L CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2650 6575 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 2650 6750 50  0001 C CNN
-	1    2650 6750
+P 2650 6850
+F 0 "D2" V 2604 6930 50  0000 L CNN
+F 1 "1N4148" V 2695 6930 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2650 6675 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 2650 6850 50  0001 C CNN
+	1    2650 6850
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:D_Zener D1
 U 1 1 60EE737E
-P 2650 6400
-F 0 "D1" V 2696 6320 50  0000 R CNN
-F 1 "36V" V 2605 6320 50  0000 R CNN
-F 2 "" H 2650 6400 50  0001 C CNN
-F 3 "~" H 2650 6400 50  0001 C CNN
-	1    2650 6400
+P 2650 6500
+F 0 "D1" V 2696 6420 50  0000 R CNN
+F 1 "36V" V 2605 6420 50  0000 R CNN
+F 2 "" H 2650 6500 50  0001 C CNN
+F 3 "~" H 2650 6500 50  0001 C CNN
+	1    2650 6500
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2650 6250 2650 6200
+	2650 6350 2650 6300
 Wire Wire Line
-	2650 6200 3300 6200
+	2650 6300 3300 6300
 Wire Wire Line
-	3300 6200 3300 6250
+	3300 6300 3300 6350
 $Comp
 L power:VAA #PWR07
 U 1 1 60EE9377
-P 3300 6200
-F 0 "#PWR07" H 3300 6050 50  0001 C CNN
-F 1 "VAA" H 3315 6373 50  0000 C CNN
-F 2 "" H 3300 6200 50  0001 C CNN
-F 3 "" H 3300 6200 50  0001 C CNN
-	1    3300 6200
+P 3300 6300
+F 0 "#PWR07" H 3300 6150 50  0001 C CNN
+F 1 "VAA" H 3315 6473 50  0000 C CNN
+F 2 "" H 3300 6300 50  0001 C CNN
+F 3 "" H 3300 6300 50  0001 C CNN
+	1    3300 6300
 	1    0    0    -1  
 $EndComp
-Connection ~ 3300 6200
+Connection ~ 3300 6300
 $Comp
 L power:VAA #PWR014
 U 1 1 60EEB959
@@ -656,12 +654,12 @@ Connection ~ 4800 850
 Wire Wire Line
 	4800 850  3700 850 
 Wire Wire Line
-	2650 6900 3300 6900
+	2650 7000 3300 7000
 Wire Wire Line
-	3300 6900 3300 6850
+	3300 7000 3300 6950
 Wire Wire Line
-	3300 6900 3300 7100
-Connection ~ 3300 6900
+	3300 7000 3300 7100
+Connection ~ 3300 7000
 $Comp
 L power:GND #PWR08
 U 1 1 60EF6941
@@ -680,214 +678,199 @@ Wire Wire Line
 Wire Wire Line
 	2400 4400 2300 4400
 Wire Wire Line
-	2650 6600 2650 6550
+	2650 6700 2650 6650
 Wire Wire Line
 	2950 7300 3000 7300
 $Comp
 L Transistor_BJT:BC547 Q4
 U 1 1 60F15555
-P 3400 5250
-F 0 "Q4" H 3591 5296 50  0000 L CNN
-F 1 "BC547" H 3591 5205 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3600 5175 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 3400 5250 50  0001 L CNN
-	1    3400 5250
+P 3200 5350
+F 0 "Q4" H 3391 5396 50  0000 L CNN
+F 1 "BC547" H 3391 5305 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3400 5275 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 3200 5350 50  0001 L CNN
+	1    3200 5350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Transistor_BJT:BC547 Q1
 U 1 1 60F16171
-P 2950 5050
-F 0 "Q1" H 3141 5096 50  0000 L CNN
-F 1 "BC547" H 3141 5005 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3150 4975 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 2950 5050 50  0001 L CNN
-	1    2950 5050
+P 2750 5150
+F 0 "Q1" H 2941 5196 50  0000 L CNN
+F 1 "BC547" H 2941 5105 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2950 5075 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 2750 5150 50  0001 L CNN
+	1    2750 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3050 5250 3200 5250
+	2850 5350 3000 5350
 Wire Wire Line
 	2300 4500 3050 4500
 $Comp
 L power:GND #PWR06
 U 1 1 60F1FE69
-P 3050 5250
-F 0 "#PWR06" H 3050 5000 50  0001 C CNN
-F 1 "GND" H 3055 5077 50  0000 C CNN
-F 2 "" H 3050 5250 50  0001 C CNN
-F 3 "" H 3050 5250 50  0001 C CNN
-	1    3050 5250
+P 2850 5350
+F 0 "#PWR06" H 2850 5100 50  0001 C CNN
+F 1 "GND" H 2855 5177 50  0000 C CNN
+F 2 "" H 2850 5350 50  0001 C CNN
+F 3 "" H 2850 5350 50  0001 C CNN
+	1    2850 5350
 	1    0    0    -1  
 $EndComp
-Connection ~ 3050 5250
+Connection ~ 2850 5350
 Wire Wire Line
-	2750 5050 2750 5500
+	2550 5150 2550 5600
 Wire Wire Line
-	2750 5500 2950 5500
+	2550 5600 2750 5600
 Wire Wire Line
-	3500 5500 3500 5450
+	3300 5600 3300 5550
 $Comp
 L Device:R R6
 U 1 1 60F23498
-P 3800 5700
-F 0 "R6" H 3870 5746 50  0000 L CNN
-F 1 "100k" H 3870 5655 50  0000 L CNN
-F 2 "" V 3730 5700 50  0001 C CNN
-F 3 "~" H 3800 5700 50  0001 C CNN
-	1    3800 5700
+P 3600 5800
+F 0 "R6" H 3670 5846 50  0000 L CNN
+F 1 "100k" H 3670 5755 50  0000 L CNN
+F 2 "" V 3530 5800 50  0001 C CNN
+F 3 "~" H 3600 5800 50  0001 C CNN
+	1    3600 5800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C2
 U 1 1 60F241A9
-P 2950 5600
-F 0 "C2" H 3042 5646 50  0000 L CNN
-F 1 "10uF ceramic" H 3042 5555 50  0000 L CNN
-F 2 "" H 2950 5600 50  0001 C CNN
-F 3 "~" H 2950 5600 50  0001 C CNN
-	1    2950 5600
+P 2750 5700
+F 0 "C2" H 2842 5746 50  0000 L CNN
+F 1 "10uF ceramic" H 2842 5655 50  0000 L CNN
+F 2 "" H 2750 5700 50  0001 C CNN
+F 3 "~" H 2750 5700 50  0001 C CNN
+	1    2750 5700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR05
 U 1 1 60F24DB7
-P 2950 5700
-F 0 "#PWR05" H 2950 5450 50  0001 C CNN
-F 1 "GND" H 2955 5527 50  0000 C CNN
-F 2 "" H 2950 5700 50  0001 C CNN
-F 3 "" H 2950 5700 50  0001 C CNN
-	1    2950 5700
+P 2750 5800
+F 0 "#PWR05" H 2750 5550 50  0001 C CNN
+F 1 "GND" H 2755 5627 50  0000 C CNN
+F 2 "" H 2750 5800 50  0001 C CNN
+F 3 "" H 2750 5800 50  0001 C CNN
+	1    2750 5800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 5500 3800 5500
+	3300 5600 3600 5600
 Wire Wire Line
-	3800 5500 3800 5550
-Connection ~ 3500 5500
-Connection ~ 2950 5500
+	3600 5600 3600 5650
+Connection ~ 3300 5600
+Connection ~ 2750 5600
 Wire Wire Line
-	2950 5500 3500 5500
-NoConn ~ 3600 6250
+	2750 5600 3300 5600
+NoConn ~ 3600 6350
 Text Notes 950  2350 0    50   ~ 0
 R1, R2, R4, R5 form a voltage divider that senses B+/B- level.\nIf either falls too low, Q2 will turn off.\nCompute the divider ratios so that B is 0.65V and\nE is 0V at the low voltage detection threshold.\nDisplayed values are computed for B+=26V B-=23V\n(undervoltage thresholds)
-Text Notes 5750 5700 0    50   ~ 0
+Text Notes 5750 5950 0    50   ~ 0
 R6, C2 (R12, C4) form a lowpass filter from the power amp output.\nCompute the filter so that its attenuation will guarantee a filter\noutput voltage <0.5V at maximum amp output voltage and\nlowest design (-3dB) output frequency.\nFor an amp with +/-40V rails and -3dB freq. 20Hz:\n0.5V/40V=1/80=-40dB\n1st order = 6dB/octave\n40dB/(6dB/octave)=6.6 octaves (round up to 7 octaves)\n7 octaves below 20Hz = 20/(2^7) = 0.156Hz\n1/(2*pi*R*C)=1/(2*pi*100k*10uF)=0.159Hz\nSince C2 will never see more than +/-0.7V (VBE)\nit can be a low-voltage ceramic type (the voltage-dependent\nnonlinearity ceramics otherwise exhibit are not important\nin this application)
-Text Notes 5750 6350 0    50   ~ 0
+Text Notes 5750 6450 0    50   ~ 0
 Disconnect the speaker + fom the amp output,\nconnect the amp to AMP+, speaker to SPEAKER+.\nConnect "SPEAKER-" directly to the speaker output jack.\nIf the amp is not BTL (SPEAKER- connects to POWER GND),\nomit Q5, Q6, C4, R12.
 Text Notes 5550 2150 0    50   ~ 0
 Connect B+/B- to the amp power rails.\nIf the amp is single rail, omit R4/R5\nand connect Q2 E to GND.
 $Comp
 L Transistor_BJT:BC547 Q6
 U 1 1 60F89B47
-P 4650 5250
-F 0 "Q6" H 4841 5296 50  0000 L CNN
-F 1 "BC547" H 4841 5205 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4850 5175 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 4650 5250 50  0001 L CNN
-	1    4650 5250
+P 4450 5350
+F 0 "Q6" H 4641 5396 50  0000 L CNN
+F 1 "BC547" H 4641 5305 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4650 5275 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 4450 5350 50  0001 L CNN
+	1    4450 5350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Transistor_BJT:BC547 Q5
 U 1 1 60F89B4D
-P 4200 5050
-F 0 "Q5" H 4391 5096 50  0000 L CNN
-F 1 "BC547" H 4391 5005 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4400 4975 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 4200 5050 50  0001 L CNN
-	1    4200 5050
+P 4000 5150
+F 0 "Q5" H 4191 5196 50  0000 L CNN
+F 1 "BC547" H 4191 5105 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4200 5075 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 4000 5150 50  0001 L CNN
+	1    4000 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 5250 4450 5250
-Wire Wire Line
-	4300 4850 4750 4850
-Wire Wire Line
-	4750 4850 4750 5050
+	4100 5350 4250 5350
 $Comp
 L power:GND #PWR012
 U 1 1 60F89B58
-P 4300 5250
-F 0 "#PWR012" H 4300 5000 50  0001 C CNN
-F 1 "GND" H 4305 5077 50  0000 C CNN
-F 2 "" H 4300 5250 50  0001 C CNN
-F 3 "" H 4300 5250 50  0001 C CNN
-	1    4300 5250
+P 4100 5350
+F 0 "#PWR012" H 4100 5100 50  0001 C CNN
+F 1 "GND" H 4105 5177 50  0000 C CNN
+F 2 "" H 4100 5350 50  0001 C CNN
+F 3 "" H 4100 5350 50  0001 C CNN
+	1    4100 5350
 	1    0    0    -1  
 $EndComp
-Connection ~ 4300 5250
+Connection ~ 4100 5350
 Wire Wire Line
-	4000 5050 4000 5500
+	3800 5150 3800 5600
 Wire Wire Line
-	4000 5500 4200 5500
+	3800 5600 4000 5600
 Wire Wire Line
-	4750 5500 4750 5450
+	4550 5600 4550 5550
 $Comp
 L Device:R R12
 U 1 1 60F89B62
-P 4900 5700
-F 0 "R12" H 4970 5746 50  0000 L CNN
-F 1 "100k" H 4970 5655 50  0000 L CNN
-F 2 "" V 4830 5700 50  0001 C CNN
-F 3 "~" H 4900 5700 50  0001 C CNN
-	1    4900 5700
+P 4700 5800
+F 0 "R12" H 4770 5846 50  0000 L CNN
+F 1 "100k" H 4770 5755 50  0000 L CNN
+F 2 "" V 4630 5800 50  0001 C CNN
+F 3 "~" H 4700 5800 50  0001 C CNN
+	1    4700 5800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C4
 U 1 1 60F89B68
-P 4200 5600
-F 0 "C4" H 4292 5646 50  0000 L CNN
-F 1 "10uF ceramic" H 4292 5555 50  0000 L CNN
-F 2 "" H 4200 5600 50  0001 C CNN
-F 3 "~" H 4200 5600 50  0001 C CNN
-	1    4200 5600
+P 4000 5700
+F 0 "C4" H 4092 5746 50  0000 L CNN
+F 1 "10uF ceramic" H 4092 5655 50  0000 L CNN
+F 2 "" H 4000 5700 50  0001 C CNN
+F 3 "~" H 4000 5700 50  0001 C CNN
+	1    4000 5700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR011
 U 1 1 60F89B6E
-P 4200 5700
-F 0 "#PWR011" H 4200 5450 50  0001 C CNN
-F 1 "GND" H 4205 5527 50  0000 C CNN
-F 2 "" H 4200 5700 50  0001 C CNN
-F 3 "" H 4200 5700 50  0001 C CNN
-	1    4200 5700
+P 4000 5800
+F 0 "#PWR011" H 4000 5550 50  0001 C CNN
+F 1 "GND" H 4005 5627 50  0000 C CNN
+F 2 "" H 4000 5800 50  0001 C CNN
+F 3 "" H 4000 5800 50  0001 C CNN
+	1    4000 5800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4900 5500 4900 5550
-Connection ~ 4200 5500
+	4700 5600 4700 5650
+Connection ~ 4000 5600
 Wire Wire Line
-	4200 5500 4750 5500
+	4000 5600 4550 5600
 Wire Wire Line
-	4750 5500 4900 5500
-Connection ~ 4750 5500
+	4550 5600 4700 5600
+Connection ~ 4550 5600
 Wire Wire Line
-	4900 5850 4900 6150
-Connection ~ 4900 6150
+	4700 5950 4700 6250
 Wire Wire Line
-	4900 6150 4000 6150
+	3600 5950 3600 6050
 Wire Wire Line
-	4300 4850 3500 4850
-Connection ~ 4300 4850
-Wire Wire Line
-	3800 5850 3800 5950
-Connection ~ 3800 5950
-Wire Wire Line
-	3500 4850 3500 5050
-Wire Wire Line
-	3050 4850 3500 4850
-Connection ~ 3500 4850
+	3050 4850 3300 4850
 Wire Wire Line
 	3050 4500 3050 4850
-Connection ~ 3050 4850
 Text Notes 5550 1250 0    50   ~ 0
 V+ must equal the relay coil voltage.\nRange 8-30V (LM78L05 limitation)
-Text Notes 600  6600 0    50   ~ 0
+Text Notes 600  6700 0    50   ~ 0
 Select D1 (zener) so that Vz+VAA < Q3 Vceo|Vcbo.\nFor 12V relay and BC546:\nVz(D1) < (65V - 12V - safety margin)\nVz(D1) < 53V - safety margin\n(higher Vz will give faster relay turn-off)
-Text Notes 3750 7350 0    50   ~ 0
+Text Notes 4200 7700 0    50   ~ 0
 Use a sealed relay to prevent contact tarnishing which will give\nerratic or distorted amp output.\nIf more parallel relays are needed and the transistor current exceeds\n100mA, substitute Q3 and recompute R3 for the new hFE.
 $Comp
 L Transistor_BJT:BD139 Q7
@@ -1156,4 +1139,81 @@ Wire Notes Line
 	11150 3400 7700 3400
 Wire Wire Line
 	10000 2900 10350 2900
+Connection ~ 3300 4850
+Connection ~ 4550 4850
+Connection ~ 4700 6250
+Wire Wire Line
+	4700 6250 4000 6250
+Wire Wire Line
+	4700 6250 5050 6250
+Wire Wire Line
+	3300 4850 4100 4850
+Wire Wire Line
+	3600 6050 3800 6050
+Connection ~ 3800 6050
+Wire Wire Line
+	3300 4850 3300 5150
+Wire Wire Line
+	2850 4950 2850 4850
+Wire Wire Line
+	2850 4850 3050 4850
+Connection ~ 3050 4850
+Wire Wire Line
+	4100 4950 4100 4850
+Connection ~ 4100 4850
+Wire Wire Line
+	4100 4850 4550 4850
+Wire Wire Line
+	4550 4850 4550 5150
+$Comp
+L Connector:Conn_01x02_Male J15
+U 1 1 60E3A49A
+P 5250 5550
+F 0 "J15" H 5222 5524 50  0000 R CNN
+F 1 "10k NTC" H 5222 5433 50  0000 R CNN
+F 2 "" H 5250 5550 50  0001 C CNN
+F 3 "~" H 5250 5550 50  0001 C CNN
+	1    5250 5550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR022
+U 1 1 60E41895
+P 5050 5650
+F 0 "#PWR022" H 5050 5400 50  0001 C CNN
+F 1 "GND" H 5055 5477 50  0000 C CNN
+F 2 "" H 5050 5650 50  0001 C CNN
+F 3 "" H 5050 5650 50  0001 C CNN
+	1    5050 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 60E51BF0
+P 5050 5400
+F 0 "R21" H 5120 5446 50  0000 L CNN
+F 1 "4k7" H 5120 5355 50  0000 L CNN
+F 2 "" V 4980 5400 50  0001 C CNN
+F 3 "~" H 5050 5400 50  0001 C CNN
+	1    5050 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR021
+U 1 1 60E5276A
+P 5050 5250
+F 0 "#PWR021" H 5050 5100 50  0001 C CNN
+F 1 "+5V" H 5065 5423 50  0000 C CNN
+F 2 "" H 5050 5250 50  0001 C CNN
+F 3 "" H 5050 5250 50  0001 C CNN
+	1    5050 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4850 4950 5550
+Wire Wire Line
+	4950 5550 5050 5550
+Wire Wire Line
+	4550 4850 4950 4850
+Connection ~ 5050 5550
 $EndSCHEMATC
