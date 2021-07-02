@@ -5,3 +5,4 @@
 *.sym
 *.cof
 cal.hex
+fp-info-cache
