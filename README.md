@@ -60,6 +60,10 @@ Edit the Makefile and change the `AVRDUDE_` parameters to your specific needs. R
 
 You can alternatively use avrdude or another programmer without having a full compilation environment, but you'll need to set the fuse bits correctly: lfuse = 0x79 (Disable CLKDIV8, 4.8MHz clock). The clock will be uncalibrated so delays will be inaccurate (slower), but the circuit will still function.
 
+### Prototype
+
+[Prototype images](prototype/index.md)
+
 ### Credits
 
 This is an original design by me, not copying any existing circuit. Inspired by <https://sound-au.com/project111.htm> and <https://sound-au.com/project33.htm>. Relay information obtained from <https://sound-au.com/articles/relays.htm>.
