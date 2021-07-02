@@ -40,7 +40,7 @@ It's possible to accomodate both common-cathode and common-anode LEDs by changin
 
 ### Schematic
 
-TODO
+Drawn in Kicad 5.1.10. [pdf](amprot_v1/amprot_v1.pdf) [sch](amprot_v1/amprot_v1.sch)
 
 ### Compiling the firmware
 
